@@ -45,6 +45,7 @@ let g:ale_fixers.cpp = ['astyle']
 let g:ale_fixers.c = ['astyle']
 let g:ale_fixers.rust = ['rustfmt']
 let g:ale_fixers.php = ['pint']
+let g:ale_fixers.dart = ['dart-format']
 let g:ale_fix_on_save = 1
 
 let g:ale_linters = {}

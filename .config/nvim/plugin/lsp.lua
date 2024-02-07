@@ -67,3 +67,6 @@ require("lspconfig").jsonls.setup({ capabilities = capabilities })
 
 -- php
 require("lspconfig").phpactor.setup({})
+
+-- dart
+require("lspconfig").dartls.setup({})
