@@ -132,6 +132,10 @@ Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+
+Plug 'github/copilot.vim'
+
+Plug 'marilari88/twoslash-queries.nvim'
 call plug#end()
 
 set completeopt=menu,noinsert

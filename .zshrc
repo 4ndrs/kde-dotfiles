@@ -40,6 +40,7 @@ alias egrep='egrep --color'
 alias diff='diff --color' # diff -u for usual patch diff
 alias info='info --vi-keys'
 alias pipex="$HOME/Scripts/pipes.sh"
+alias get_window_id='xwininfo | sed -n "s/^.*id: \(\w*\).*$/\1/p"'
 #alias nvim='/home/andres/Dev/App\ Images/nvim.appimage'
 
 export EDITOR=vi
@@ -58,7 +59,3 @@ export NVM_DIR="$HOME/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH:$HOME/.local/bin/"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

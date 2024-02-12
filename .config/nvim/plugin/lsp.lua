@@ -22,7 +22,9 @@ end
 ]]
 -- TypeScript language server
 nvim_lsp.tsserver.setup({
-	on_attach = on_attach,
+	on_attach = function(client, bufnr)
+    require("twoslash-queries").attach(client, bufnr)
+  end,
 	filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact" },
 	cmd = { "typescript-language-server", "--stdio" },
 	settings = {
