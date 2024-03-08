@@ -72,3 +72,6 @@ require("lspconfig").phpactor.setup({})
 
 -- dart
 require("lspconfig").dartls.setup({})
+
+-- dockerfile
+require("lspconfig").dockerls.setup({})
